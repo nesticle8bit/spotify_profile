@@ -1,0 +1,51 @@
+.user {
+    &__header {
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+    &__avatar {
+        width: 150px;
+        height: 150px;
+
+        & img {
+            border-radius: 100%;
+        }
+    }
+
+    &__name {
+        font-size: 50px;
+        font-weight: 700;
+        margin: 20px 0px 0px;
+    }
+
+    &__stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-top: 20px;
+
+        &--items {
+            text-align: center;
+        }
+    }
+
+    &__number {
+        color: rgb(29, 185, 84);
+        font-weight: 700;
+        font-size: 20px;
+
+        &--label {
+            color: rgb(155, 155, 155);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 5px;
+        }
+    }
+}
